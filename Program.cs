@@ -3,6 +3,7 @@ using examen3Contabilidad;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+builder.WebHost.UseUrls("http://0.0.0.0:8080");
 
 builder.Services.AddCors(options =>
 {
@@ -49,5 +50,5 @@ app.UseHttpsRedirection();
 app.UseAuthorization();
 
 app.MapControllers();
-
+app.UseCors("myApp");
 app.Run();
