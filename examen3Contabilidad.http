@@ -1,0 +1,6 @@
+@examen3Contabilidad_HostAddress = http://localhost:5056
+
+GET {{examen3Contabilidad_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
